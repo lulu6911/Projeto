@@ -8,6 +8,7 @@
     height: 100px;
     text-align: center;
     line-height: 100px;
+    background-color: lightcoral;
 }
 #esquerda{
     border: 2px solid white;
@@ -16,6 +17,7 @@
     min-width: 250px;
     display: inline-block;
     vertical-align: top;
+    background-color: lightblue;
 
 
 
@@ -29,6 +31,7 @@
     min-width: 250px;
     display: inline-block;
     vertical-align: top;
+    background-color: lightslategrey;
  
   
 }
@@ -39,10 +42,12 @@
     min-width: 250px;
     display: inline-block;
     vertical-align: top;
+    background-color: lightcyan;
 }
 #rodape{
     border: 3px solid black;
     width: auto;
     height: 50px;
+    background-color: lightskyblue;
    
 }
