@@ -1,16 +1,48 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+#corpo{
+    border: 3px solid blue;
+    width: auto;
+    height: auto;
 }
-h1, h2, p, p, a{
+#topo{
+    border: 2px solid purple;
+    height: 100px;
     text-align: center;
+    line-height: 100px;
 }
-img{
-    height: 200px;
-    margin-right:auto;
-    margin-left:auto;
-    display: block;
+#esquerda{
+    border: 2px solid white;
+    height: 700px;
+    width: 24%;
+    min-width: 250px;
+    display: inline-block;
+    vertical-align: top;
 
+
+
+}
+
+
+#direita{
+    border: 2px solid green;
+    width: 24%;
+    height: 700px;
+    min-width: 250px;
+    display: inline-block;
+    vertical-align: top;
+ 
+  
+}
+#centro{
+    border: 2px solid red;
+    width: 50%;
+    height: 700px;
+    min-width: 250px;
+    display: inline-block;
+    vertical-align: top;
+}
+#rodape{
+    border: 3px solid black;
+    width: auto;
+    height: 50px;
+   
 }
