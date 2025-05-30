@@ -1,0 +1,49 @@
+document.addEventListener('DOMContentLoaded', function() {
+    // Menu mobile
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const nav = document.querySelector('.nav');
+    
+    if (mobileMenu && nav) {
+        mobileMenu.addEventListener('click', function() {
+            nav.classList.toggle('active');
+        });
+    }
+    
+    // Destaque do menu ativo
+    const currentPage = window.location.pathname.split('/').pop() || 'index.html';
+    const menuLinks = document.querySelectorAll('.nav a, .menu-navegacao .botao');
+    
+    menuLinks.forEach(link => {
+        const linkPage = link.getAttribute('href');
+        if (linkPage === currentPage || 
+            (currentPage === 'index.html' && linkPage === '/') ||
+            (currentPage === '' && linkPage === 'index.html')) {
+            link.classList.add('active');
+        }
+        
+        // Para os botões do menu de navegação
+        if (link.classList.contains('botao')) {
+            link.addEventListener('click', function() {
+                menuLinks.forEach(l => l.classList.remove('active'));
+                this.classList.add('active');
+            });
+        }
+    });
+    
+    // Animação ao rolar
+    const observerOptions = {
+        threshold: 0.1
+    };
+    
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate');
+            }
+        });
+    }, observerOptions);
+    
+    document.querySelectorAll('.titulo-card, .estadual-card, .historia-section').forEach(section => {
+        observer.observe(section);
+    });
+});
