@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Títulos - Botafogo de Futebol e Regatas</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/titulos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho (igual ao index.html) -->
+    <header class="header">
+        [...]
+    </header>
+
+    <!-- Banner da Página -->
+    <section class="page-hero" style="background-image: url('../imagens/titulos-1.jpg')">
+        <div class="container">
+            <h1>Nossos Títulos</h1>
+            <p>As conquistas que marcaram nossa história</p>
+        </div>
+    </section>
+
+    <!-- Menu de Navegação -->
+    <div class="menu-navegacao">
+        [...]
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <div class="container">
+            <section class="titulos-section">
+                <h2 class="section-title">Conquistas Nacionais</h2>
+                
+                <div class="titulo-card">
+                    <div class="titulo-imagem">
+                        <img src="imagens/titulos-2.jpg" alt="Campeonato Brasileiro 1968">
+                    </div>
+                    <div class="titulo-info">
+                        <h3>Campeonato Brasileiro 1968</h3>
+                        <p>O Botafogo conquistou o Campeonato Brasileiro de 1968 de forma invicta, com um time que ficou conhecido como "O Time das Estrelas".</p>
+                        <ul class="titulo-detalhes">
+                            <li><i class="fas fa-trophy"></i> Campeão invicto</li>
+                            <li><i class="fas fa-star"></i> 15 vitórias em 21 jogos</li>
+                            <li><i class="fas fa-users"></i> Time base: Manga, Paulo César, Roberto, Zé Maria, Moreira...</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="titulo-card reverse">
+                    <div class="titulo-info">
+                        <h3>Copa Conmebol 1993</h3>
+                        <p>Primeiro clube brasileiro a vencer uma competição internacional oficial organizada pela CONMEBOL, equivalente à atual Copa Sul-Americana.</p>
+                        <ul class="titulo-detalhes">
+                            <li><i class="fas fa-trophy"></i> Vitória sobre o Peñarol-URU na final</li>
+                            <li><i class="fas fa-star"></i> Gols decisivos de Túlio e Valdeir</li>
+                            <li><i class="fas fa-users"></i> Time base: Wagner, Jorginho, Ricardo Rocha, André Luís, Túlio...</li>
+                        </ul>
+                    </div>
+                    <div class="titulo-imagem">
+                        <img src="imagens/titulos-1.jpg" alt="Copa Conmebol 1993">
+                    </div>
+                </div>
+            </section>
+            
+            <section class="titulos-section">
+                <h2 class="section-title">Campeonatos Estaduais</h2>
+                <div class="estaduais-grid">
+                    <div class="estadual-card">
+                        <h3>21 Títulos Cariocas</h3>
+                        <ul>
+                            <li>1907 • 1910 • 1912</li>
+                            <li>1930 • 1932 • 1933 • 1934 • 1935</li>
+                            <li>1948 • 1957 • 1961 • 1962 • 1967 • 1968</li>
+                            <li>1989 • 1990 • 1997</li>
+                            <li>2006 • 2010 • 2013 • 2018</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé (igual ao index.html) -->
+    <footer class="footer">
+        [...]
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
