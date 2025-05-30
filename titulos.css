@@ -1,0 +1,94 @@
+/* Estilos específicos para a página de Títulos */
+.titulos-section {
+    margin: 60px 0;
+}
+
+.titulo-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+    margin: 50px 0;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-card.reverse {
+    direction: rtl;
+}
+
+.titulo-card.reverse > * {
+    direction: ltr;
+}
+
+.titulo-imagem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.titulo-info {
+    padding: 30px;
+}
+
+.titulo-info h3 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+}
+
+.titulo-detalhes {
+    list-style: none;
+    margin-top: 20px;
+}
+
+.titulo-detalhes li {
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.titulo-detalhes i {
+    color: var(--accent-color);
+}
+
+.estaduais-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin-top: 40px;
+}
+
+.estadual-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.estadual-card h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+.estadual-card ul {
+    list-style: none;
+    text-align: center;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+@media (max-width: 768px) {
+    .titulo-card {
+        grid-template-columns: 1fr;
+    }
+    
+    .titulo-card.reverse {
+        direction: ltr;
+    }
+}
