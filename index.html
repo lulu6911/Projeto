@@ -1,41 +1,178 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8" />
-    <title>Meu CSS</title>
-    <link rel="stylesheet" href="css/geral.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Botafogo de Futebol e Regatas</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
-    <div id="corpo">
-        <div id="topo">BOTAFOGO DE FUTEBOL E REGATAS</div>
-
-        <div id="menu">
-            <div class="botao" id="botao1">Botão 1</div>
-            <div class="botao" id="botao2">Botão 2</div>
-            <div class="botao" id="botao3">Botão 3</div>
-            <div class="botao" id="botao4">Botão 4</div>
-            <div class="botao" id="botao5">Botão 5</div>
-        </div>
-
-        <div id="meio">
-            <div id="esquerda">
-              <img src="imagens\37f87f5c930b4101cb1e58289339e813.webp" alt="Pega os D" width="100%" height="100%"> 
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                    <li><a href="#idolos">Ídolos</a></li>
+                    <img src="imagens\images.png" alt="Escudo Botafogo">
+                <h1>Botafogo <span>de Futebol e Regatas</span></h1>
             </div>
-
-            <div id="centro">
-              <iframe src="https://www.youtube.com/embed/kvKEVUPSqSM" frameborder="0"width="99.5%" heigth="99.5%"></iframe>
-
-            </div>
-            <div id="direita">
-                <img src="imagens/dd2ae5d084754c25b0656a24a99aa968.png" alt="Campeão absoluto" width="100%" height="100%" />
+            <nav class="nav">
+                <ul>
+                    <li><a href="#historia" class="active">História</a></li>
+                    <li><a href="#titulos">Títulos</a></li>
+                    <li><a href="#idolos">Ídolos</a></li>
+                    <li><a href="#classicos">Clássicos</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </nav>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
+    </header>
 
-        <div id="rodape">
-          <img src="imagens\patrick-de-paula-comemora-gol-marcado-pelo-botafogo-contra-o-carabobo-na-libertadores-1744156784890_v2_450x450.jpg" alt="Couro e Cacete">
+    <!-- Hero Banner -->
+    <section class="hero">
+        <div class="container">
+            <h2>Mais que um clube, uma paixão</h2>
+            <p>Desde 1904 escrevendo a história do futebol brasileiro</p>
         </div>
-    </div>
+    </section>
 
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <!-- Seção História -->
+        <section id="historia" class="section active">
+            <div class="container">
+                <h2 class="section-title">Nossa História</h2>
+                <div class="grid">
+                    <div class="text-content">
+                        <p>Fundado em 12 de agosto de 1904 por um grupo de estudantes do Colégio Alfredo Gomes, no bairro de Botafogo, o Botafogo de Futebol e Regatas é um dos clubes mais tradicionais do futebol brasileiro.</p>
+                        <p>O nome original era Electro Club, inspirado nas novidades da eletricidade que chegavam ao Brasil. Em 1904, o clube mudou para Botafogo Football Club, adotando as cores preto e branco e a estrela solitária que se tornaram seus símbolos máximos.</p>
+                        <p>A fusão com o Club de Regatas Botafogo ocorreu em 1942, formando o atual Botafogo de Futebol e Regatas.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="imagens/historia-2.jpg" alt="Fundação do Botafogo">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Títulos -->
+        <section id="titulos" class="section">
+            <div class="container">
+                <h2 class="section-title">Nossos Títulos</h2>
+                <div class="trophies-grid">
+                    <div class="trophy-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Campeonato Brasileiro</h3>
+                        <p>1968 - Campeão invicto</p>
+                    </div>
+                    <div class="trophy-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Copa Conmebol</h3>
+                        <p>1995 - Primeiro clube brasileiro a vencer</p>
+                    </div>
+                    <div class="trophy-card">
+                        <i class="fas fa-trophy"></i>
+                        <h3>Campeonato Carioca</h3>
+                        <p>21 títulos estaduais</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Ídolos -->
+        <section id="idolos" class="section">
+            <div class="container">
+                <h2 class="section-title">Nossos Ídolos</h2>
+                <div class="idols-grid">
+                    <div class="idol-card">
+                        <img src="imagens\garrincha_Destaque.jpg" alt="Garrincha">
+                        <h3>Garrincha</h3>
+                        <p>O Anjo das Pernas Tortas</p>
+                    </div>
+                    <div class="idol-card">
+                        <img src="imagens/nilton-santos.jpg" alt="Nilton Santos">
+                        <h3>Nilton Santos</h3>
+                        <p>A Enciclopédia</p>
+                    </div>
+                    <div class="idol-card">
+                        <img src="imagens/jairzinho.jpg" alt="Jairzinho">
+                        <h3>Jairzinho</h3>
+                        <p>O Furacão da Copa</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Clássicos -->
+        <section id="classicos" class="section">
+            <div class="container">
+                <h2 class="section-title">Clássicos Memoráveis</h2>
+                <div class="classics-grid">
+                    <div class="classic-card">
+                        <h3>Botafogo x Flamengo</h3>
+                        <p>O clássico da rivalidade</p>
+                    </div>
+                    <div class="classic-card">
+                        <h3>Botafogo x Fluminense</h3>
+                        <p>O clássico vovô</p>
+                    </div>
+                    <div class="classic-card">
+                        <h3>Botafogo x Vasco</h3>
+                        <p>O clássico da amizade</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Seção Contato -->
+        <section id="contato" class="section">
+            <div class="container">
+                <h2 class="section-title">Fale Conosco</h2>
+                <div class="contact-grid">
+                    <div class="contact-info">
+                        <h3>Estádio Nilton Santos</h3>
+                        <p><i class="fas fa-map-marker-alt"></i> Rua José dos Reis, 425 - Engenho de Dentro, RJ</p>
+                        <p><i class="fas fa-phone"></i> (21) 4004-4004</p>
+                        <p><i class="fas fa-envelope"></i> relacionamento@botafogo.com.br</p>
+                    </div>
+                    <div class="contact-form">
+                        <form>
+                            <input type="text" placeholder="Seu nome">
+                            <input type="email" placeholder="Seu e-mail">
+                            <textarea placeholder="Sua mensagem"></textarea>
+                            <button type="submit">Enviar</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <img src="imagens/escudo.png" alt="Escudo Botafogo">
+                    <p>Botafogo de Futebol e Regatas</p>
+                </div>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Botafogo de Futebol e Regatas. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
 </body>
 </html>
