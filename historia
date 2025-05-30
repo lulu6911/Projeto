@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>História - Botafogo de Futebol e Regatas</title>
+    <link rel="stylesheet" href="css/geral.css">
+    <link rel="stylesheet" href="css/historia.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Cabeçalho (igual ao index.html) -->
+    <header class="header">
+        [...]
+    </header>
+
+    <!-- Banner da Página -->
+    <section class="page-hero" style="background-image: url('../imagens/historia-2.jpg')">
+        <div class="container">
+            <h1>Nossa História</h1>
+            <p>Conheça a trajetória do clube da Estrela Solitária</p>
+        </div>
+    </section>
+
+    <!-- Menu de Navegação -->
+    <div class="menu-navegacao">
+        <div class="container">
+            <div class="botao" onclick="location.href='index.html'">Home</div>
+            <div class="botao ativo" onclick="location.href='historia.html'">História</div>
+            <div class="botao" onclick="location.href='titulos.html'">Títulos</div>
+            <div class="botao" onclick="location.href='idolos.html'">Ídolos</div>
+            <div class="botao" onclick="location.href='classicos.html'">Clássicos</div>
+            <div class="botao" onclick="location.href='contato.html'">Contato</div>
+        </div>
+    </div>
+
+    <!-- Conteúdo Principal -->
+    <main class="main-content">
+        <div class="container">
+            <section class="historia-section">
+                <h2 class="section-title">A Fundação</h2>
+                <div class="grid">
+                    <div class="text-content">
+                        <p>O Botafogo de Futebol e Regatas foi fundado em 12 de agosto de 1904 por um grupo de estudantes do Colégio Alfredo Gomes, no bairro de Botafogo, Rio de Janeiro. O nome original era Electro Club, inspirado nas novidades da eletricidade que chegavam ao Brasil.</p>
+                        <p>Em 1904, o clube mudou para Botafogo Football Club, adotando as cores preto e branco e a estrela solitária que se tornaram seus símbolos máximos. A fusão com o Club de Regatas Botafogo ocorreu em 1942, formando o atual Botafogo de Futebol e Regatas.</p>
+                    </div>
+                    <div class="image-content">
+                        <img src="imagens/historia-1.jpg" alt="Fundação do Botafogo">
+                    </div>
+                </div>
+            </section>
+
+            <section class="historia-section">
+                <h2 class="section-title">A Estrela Solitária</h2>
+                <div class="grid reverse">
+                    <div class="image-content">
+                        <img src="imagens/escudo.png" alt="Escudo Botafogo">
+                    </div>
+                    <div class="text-content">
+                        <p>A estrela solitária no escudo do Botafogo representa o clube como único e especial. Foi adotada em 1904 e desde então se tornou um dos símbolos mais reconhecíveis do futebol brasileiro.</p>
+                        <p>Em 1993, o Botafogo se tornou o primeiro clube brasileiro a vencer uma competição internacional oficial organizada pela CONMEBOL, a Copa CONMEBOL, equivalente à atual Copa Sul-Americana.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <!-- Rodapé (igual ao index.html) -->
+    <footer class="footer">
+        [...]
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
